@@ -177,6 +177,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    echo -e '[[ $UID != 0 ]] && TMOUT=15 && export TMOUT' >> /etc/bash.bashrc.2
    mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
    echo "${SCPdir}/menu" > /usr/bin/adm && chmod +x /usr/bin/adm
+   echo "${SCPdir}/tuzas" > /usr/bin/adm && chmod +x /usr/bin/tuzas
    echo "${SCPdir}/menu" > /usr/bin/oro && chmod +x /usr/bin/oro
    inst_components
    echo "$Key" > ${SCPdir}/key.txt
